@@ -1,0 +1,1436 @@
+... Beginning the parsing process ...
+
+yyline no.- 6, yytext- int	: type-specifier --> int
+yyline no.- 6, yytext- ar	: pointer-opt --> epsilon
+yyline no.- 6, yytext- ]	: direct-declarator --> identifier [ integer_constant ]
+yyline no.- 6, yytext- ]	: declarator --> pointer-opt direct-declarator
+yyline no.- 6, yytext- ;	: init-declarator --> declarator
+yyline no.- 6, yytext- ;	: declaration --> type-specifier init-declarator ;
+yyline no.- 6, yytext- ;	: external-declaration --> declaration
+yyline no.- 6, yytext- ;	: translation-unit --> external-declaration
+yyline no.- 8, yytext- int	: type-specifier --> int
+yyline no.- 8, yytext- ternarySearch	: pointer-opt --> epsilon
+yyline no.- 8, yytext- int	: type-specifier --> int
+yyline no.- 8, yytext- l	: pointer-opt --> epsilon
+yyline no.- 8, yytext- l	: identifier-opt --> identifier
+yyline no.- 8, yytext- l	: parameter-declaration --> type_specifier pointer_opt identifier_opt
+yyline no.- 8, yytext- l	: parameter-list --> parameter-declaration
+yyline no.- 8, yytext- int	: type-specifier --> int
+yyline no.- 8, yytext- r	: pointer-opt --> epsilon
+yyline no.- 8, yytext- r	: identifier-opt --> identifier
+yyline no.- 8, yytext- r	: parameter-declaration --> type_specifier pointer_opt identifier_opt
+yyline no.- 8, yytext- r	: parameter-list --> parameter-list , parameter-declaration
+yyline no.- 8, yytext- int	: type-specifier --> int
+yyline no.- 8, yytext- key	: pointer-opt --> epsilon
+yyline no.- 8, yytext- key	: identifier-opt --> identifier
+yyline no.- 8, yytext- key	: parameter-declaration --> type_specifier pointer_opt identifier_opt
+yyline no.- 8, yytext- key	: parameter-list --> parameter-list , parameter-declaration
+yyline no.- 8, yytext- )	: parameter-list-opt --> parameter-list
+yyline no.- 8, yytext- )	: direct-declarator --> identifier ( parameter-list-opt )
+yyline no.- 8, yytext- )	: declarator --> pointer-opt direct-declarator
+yyline no.- 9, yytext- {	: declaration-list-opt --> epsilon
+yyline no.- 10, yytext- r	: primary-expression --> identifier
+yyline no.- 10, yytext- r	: postfix-expression --> primary-expression
+yyline no.- 10, yytext- >=	: unary-expression --> postfix-expression
+yyline no.- 10, yytext- >=	: multiplicative-expression --> unary-expression
+yyline no.- 10, yytext- >=	: additive-expression --> multiplicative-expression
+yyline no.- 10, yytext- >=	: relational-expression --> additive-expression
+yyline no.- 10, yytext- l	: primary-expression --> identifier
+yyline no.- 10, yytext- l	: postfix-expression --> primary-expression
+yyline no.- 10, yytext- )	: unary-expression --> postfix-expression
+yyline no.- 10, yytext- )	: multiplicative-expression --> unary-expression
+yyline no.- 10, yytext- )	: additive-expression --> multiplicative-expression
+yyline no.- 10, yytext- )	: relational-expression --> relational-expression >= additive-expression
+yyline no.- 10, yytext- )	: equality-expression --> relational-expression
+yyline no.- 10, yytext- )	: logical-AND-expression --> equality-expression
+yyline no.- 10, yytext- )	: logical-OR-expression --> logical-AND-expression
+yyline no.- 10, yytext- )	: conditional-expression --> logical-OR-expression
+yyline no.- 10, yytext- )	: assignment-expression --> conditional-expression
+yyline no.- 10, yytext- )	: expression --> assignment-expression
+yyline no.- 13, yytext- int	: type-specifier --> int
+yyline no.- 13, yytext- mid1	: pointer-opt --> epsilon
+yyline no.- 13, yytext- =	: direct-declarator --> identifier
+yyline no.- 13, yytext- =	: declarator --> pointer-opt direct-declarator
+yyline no.- 13, yytext- l	: primary-expression --> identifier
+yyline no.- 13, yytext- l	: postfix-expression --> primary-expression
+yyline no.- 13, yytext- +	: unary-expression --> postfix-expression
+yyline no.- 13, yytext- +	: multiplicative-expression --> unary-expression
+yyline no.- 13, yytext- +	: additive-expression --> multiplicative-expression
+yyline no.- 13, yytext- r	: primary-expression --> identifier
+yyline no.- 13, yytext- r	: postfix-expression --> primary-expression
+yyline no.- 13, yytext- -	: unary-expression --> postfix-expression
+yyline no.- 13, yytext- -	: multiplicative-expression --> unary-expression
+yyline no.- 13, yytext- -	: additive-expression --> multiplicative-expression
+yyline no.- 13, yytext- l	: primary-expression --> identifier
+yyline no.- 13, yytext- l	: postfix-expression --> primary-expression
+yyline no.- 13, yytext- )	: unary-expression --> postfix-expression
+yyline no.- 13, yytext- )	: multiplicative-expression --> unary-expression
+yyline no.- 13, yytext- )	: additive-expression --> additive-expression - multiplicative-expression
+yyline no.- 13, yytext- )	: relational-expression --> additive-expression
+yyline no.- 13, yytext- )	: equality-expression --> relational-expression
+yyline no.- 13, yytext- )	: logical-AND-expression --> equality-expression
+yyline no.- 13, yytext- )	: logical-OR-expression --> logical-AND-expression
+yyline no.- 13, yytext- )	: conditional-expression --> logical-OR-expression
+yyline no.- 13, yytext- )	: assignment-expression --> conditional-expression
+yyline no.- 13, yytext- )	: expression --> assignment-expression
+yyline no.- 13, yytext- )	: primary-expression --> ( expression )
+yyline no.- 13, yytext- )	: postfix-expression --> primary-expression
+yyline no.- 13, yytext- /	: unary-expression --> postfix-expression
+yyline no.- 13, yytext- /	: multiplicative-expression --> unary-expression
+yyline no.- 13, yytext- 3	: primary-expression --> integer_constant
+yyline no.- 13, yytext- 3	: postfix-expression --> primary-expression
+yyline no.- 13, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 13, yytext- ;	: multiplicative-expression --> multiplicative-expression / unary-expression
+yyline no.- 13, yytext- ;	: additive-expression --> additive-expression + multiplicative-expression
+yyline no.- 13, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 13, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 13, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 13, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 13, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 13, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 13, yytext- ;	: initializer --> assignment-expression
+yyline no.- 13, yytext- ;	: init-declarator --> declarator = initializer
+yyline no.- 13, yytext- ;	: declaration --> type-specifier init-declarator ;
+yyline no.- 13, yytext- ;	: block-item --> declaration
+yyline no.- 13, yytext- ;	: block-item-list --> block-item
+yyline no.- 14, yytext- int	: type-specifier --> int
+yyline no.- 14, yytext- mid2	: pointer-opt --> epsilon
+yyline no.- 14, yytext- =	: direct-declarator --> identifier
+yyline no.- 14, yytext- =	: declarator --> pointer-opt direct-declarator
+yyline no.- 14, yytext- r	: primary-expression --> identifier
+yyline no.- 14, yytext- r	: postfix-expression --> primary-expression
+yyline no.- 14, yytext- -	: unary-expression --> postfix-expression
+yyline no.- 14, yytext- -	: multiplicative-expression --> unary-expression
+yyline no.- 14, yytext- -	: additive-expression --> multiplicative-expression
+yyline no.- 14, yytext- r	: primary-expression --> identifier
+yyline no.- 14, yytext- r	: postfix-expression --> primary-expression
+yyline no.- 14, yytext- -	: unary-expression --> postfix-expression
+yyline no.- 14, yytext- -	: multiplicative-expression --> unary-expression
+yyline no.- 14, yytext- -	: additive-expression --> multiplicative-expression
+yyline no.- 14, yytext- l	: primary-expression --> identifier
+yyline no.- 14, yytext- l	: postfix-expression --> primary-expression
+yyline no.- 14, yytext- )	: unary-expression --> postfix-expression
+yyline no.- 14, yytext- )	: multiplicative-expression --> unary-expression
+yyline no.- 14, yytext- )	: additive-expression --> additive-expression - multiplicative-expression
+yyline no.- 14, yytext- )	: relational-expression --> additive-expression
+yyline no.- 14, yytext- )	: equality-expression --> relational-expression
+yyline no.- 14, yytext- )	: logical-AND-expression --> equality-expression
+yyline no.- 14, yytext- )	: logical-OR-expression --> logical-AND-expression
+yyline no.- 14, yytext- )	: conditional-expression --> logical-OR-expression
+yyline no.- 14, yytext- )	: assignment-expression --> conditional-expression
+yyline no.- 14, yytext- )	: expression --> assignment-expression
+yyline no.- 14, yytext- )	: primary-expression --> ( expression )
+yyline no.- 14, yytext- )	: postfix-expression --> primary-expression
+yyline no.- 14, yytext- /	: unary-expression --> postfix-expression
+yyline no.- 14, yytext- /	: multiplicative-expression --> unary-expression
+yyline no.- 14, yytext- 3	: primary-expression --> integer_constant
+yyline no.- 14, yytext- 3	: postfix-expression --> primary-expression
+yyline no.- 14, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 14, yytext- ;	: multiplicative-expression --> multiplicative-expression / unary-expression
+yyline no.- 14, yytext- ;	: additive-expression --> additive-expression - multiplicative-expression
+yyline no.- 14, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 14, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 14, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 14, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 14, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 14, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 14, yytext- ;	: initializer --> assignment-expression
+yyline no.- 14, yytext- ;	: init-declarator --> declarator = initializer
+yyline no.- 14, yytext- ;	: declaration --> type-specifier init-declarator ;
+yyline no.- 14, yytext- ;	: block-item --> declaration
+yyline no.- 14, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 17, yytext- ar	: primary-expression --> identifier
+yyline no.- 17, yytext- ar	: postfix-expression --> primary-expression
+yyline no.- 17, yytext- mid1	: primary-expression --> identifier
+yyline no.- 17, yytext- mid1	: postfix-expression --> primary-expression
+yyline no.- 17, yytext- ]	: unary-expression --> postfix-expression
+yyline no.- 17, yytext- ]	: multiplicative-expression --> unary-expression
+yyline no.- 17, yytext- ]	: additive-expression --> multiplicative-expression
+yyline no.- 17, yytext- ]	: relational-expression --> additive-expression
+yyline no.- 17, yytext- ]	: equality-expression --> relational-expression
+yyline no.- 17, yytext- ]	: logical-AND-expression --> equality-expression
+yyline no.- 17, yytext- ]	: logical-OR-expression --> logical-AND-expression
+yyline no.- 17, yytext- ]	: conditional-expression --> logical-OR-expression
+yyline no.- 17, yytext- ]	: assignment-expression --> conditional-expression
+yyline no.- 17, yytext- ]	: expression --> assignment-expression
+yyline no.- 17, yytext- ]	: postfix-expression --> postfix-expression [ expression ]
+yyline no.- 17, yytext- ==	: unary-expression --> postfix-expression
+yyline no.- 17, yytext- ==	: multiplicative-expression --> unary-expression
+yyline no.- 17, yytext- ==	: additive-expression --> multiplicative-expression
+yyline no.- 17, yytext- ==	: relational-expression --> additive-expression
+yyline no.- 17, yytext- ==	: equality-expression --> relational-expression
+yyline no.- 17, yytext- key	: primary-expression --> identifier
+yyline no.- 17, yytext- key	: postfix-expression --> primary-expression
+yyline no.- 17, yytext- )	: unary-expression --> postfix-expression
+yyline no.- 17, yytext- )	: multiplicative-expression --> unary-expression
+yyline no.- 17, yytext- )	: additive-expression --> multiplicative-expression
+yyline no.- 17, yytext- )	: relational-expression --> additive-expression
+yyline no.- 17, yytext- )	: equality-expression --> equality-expression == relational-expression
+yyline no.- 17, yytext- )	: logical-AND-expression --> equality-expression
+yyline no.- 17, yytext- )	: logical-OR-expression --> logical-AND-expression
+yyline no.- 17, yytext- )	: conditional-expression --> logical-OR-expression
+yyline no.- 17, yytext- )	: assignment-expression --> conditional-expression
+yyline no.- 17, yytext- )	: expression --> assignment-expression
+yyline no.- 18, yytext- mid1	: primary-expression --> identifier
+yyline no.- 18, yytext- mid1	: postfix-expression --> primary-expression
+yyline no.- 18, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 18, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 18, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 18, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 18, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 18, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 18, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 18, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 18, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 18, yytext- ;	: expression --> assignment-expression
+yyline no.- 18, yytext- ;	: expression-opt --> expression
+yyline no.- 18, yytext- ;	: jump-statement --> return expression-opt ;
+yyline no.- 18, yytext- ;	: statement --> jump-statement
+yyline no.- 18, yytext- ;	: block-item --> statement
+yyline no.- 18, yytext- ;	: block-item-list --> block-item
+yyline no.- 19, yytext- }	: block-item-list-opt --> block-item-list
+yyline no.- 19, yytext- }	: compound-statement --> { block-item-list-opt }
+yyline no.- 19, yytext- }	: statement --> compound-statement
+yyline no.- 20, yytext- if	: selection-statement --> if ( expression ) statement
+yyline no.- 20, yytext- if	: statement --> selection-statement
+yyline no.- 20, yytext- if	: block-item --> statement
+yyline no.- 20, yytext- if	: block-item-list --> block-item-list block-item
+yyline no.- 20, yytext- ar	: primary-expression --> identifier
+yyline no.- 20, yytext- ar	: postfix-expression --> primary-expression
+yyline no.- 20, yytext- mid2	: primary-expression --> identifier
+yyline no.- 20, yytext- mid2	: postfix-expression --> primary-expression
+yyline no.- 20, yytext- ]	: unary-expression --> postfix-expression
+yyline no.- 20, yytext- ]	: multiplicative-expression --> unary-expression
+yyline no.- 20, yytext- ]	: additive-expression --> multiplicative-expression
+yyline no.- 20, yytext- ]	: relational-expression --> additive-expression
+yyline no.- 20, yytext- ]	: equality-expression --> relational-expression
+yyline no.- 20, yytext- ]	: logical-AND-expression --> equality-expression
+yyline no.- 20, yytext- ]	: logical-OR-expression --> logical-AND-expression
+yyline no.- 20, yytext- ]	: conditional-expression --> logical-OR-expression
+yyline no.- 20, yytext- ]	: assignment-expression --> conditional-expression
+yyline no.- 20, yytext- ]	: expression --> assignment-expression
+yyline no.- 20, yytext- ]	: postfix-expression --> postfix-expression [ expression ]
+yyline no.- 20, yytext- ==	: unary-expression --> postfix-expression
+yyline no.- 20, yytext- ==	: multiplicative-expression --> unary-expression
+yyline no.- 20, yytext- ==	: additive-expression --> multiplicative-expression
+yyline no.- 20, yytext- ==	: relational-expression --> additive-expression
+yyline no.- 20, yytext- ==	: equality-expression --> relational-expression
+yyline no.- 20, yytext- key	: primary-expression --> identifier
+yyline no.- 20, yytext- key	: postfix-expression --> primary-expression
+yyline no.- 20, yytext- )	: unary-expression --> postfix-expression
+yyline no.- 20, yytext- )	: multiplicative-expression --> unary-expression
+yyline no.- 20, yytext- )	: additive-expression --> multiplicative-expression
+yyline no.- 20, yytext- )	: relational-expression --> additive-expression
+yyline no.- 20, yytext- )	: equality-expression --> equality-expression == relational-expression
+yyline no.- 20, yytext- )	: logical-AND-expression --> equality-expression
+yyline no.- 20, yytext- )	: logical-OR-expression --> logical-AND-expression
+yyline no.- 20, yytext- )	: conditional-expression --> logical-OR-expression
+yyline no.- 20, yytext- )	: assignment-expression --> conditional-expression
+yyline no.- 20, yytext- )	: expression --> assignment-expression
+yyline no.- 21, yytext- mid2	: primary-expression --> identifier
+yyline no.- 21, yytext- mid2	: postfix-expression --> primary-expression
+yyline no.- 21, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 21, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 21, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 21, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 21, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 21, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 21, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 21, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 21, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 21, yytext- ;	: expression --> assignment-expression
+yyline no.- 21, yytext- ;	: expression-opt --> expression
+yyline no.- 21, yytext- ;	: jump-statement --> return expression-opt ;
+yyline no.- 21, yytext- ;	: statement --> jump-statement
+yyline no.- 21, yytext- ;	: block-item --> statement
+yyline no.- 21, yytext- ;	: block-item-list --> block-item
+yyline no.- 22, yytext- }	: block-item-list-opt --> block-item-list
+yyline no.- 22, yytext- }	: compound-statement --> { block-item-list-opt }
+yyline no.- 22, yytext- }	: statement --> compound-statement
+yyline no.- 29, yytext- if	: selection-statement --> if ( expression ) statement
+yyline no.- 29, yytext- if	: statement --> selection-statement
+yyline no.- 29, yytext- if	: block-item --> statement
+yyline no.- 29, yytext- if	: block-item-list --> block-item-list block-item
+yyline no.- 29, yytext- key	: primary-expression --> identifier
+yyline no.- 29, yytext- key	: postfix-expression --> primary-expression
+yyline no.- 29, yytext- <	: unary-expression --> postfix-expression
+yyline no.- 29, yytext- <	: multiplicative-expression --> unary-expression
+yyline no.- 29, yytext- <	: additive-expression --> multiplicative-expression
+yyline no.- 29, yytext- <	: relational-expression --> additive-expression
+yyline no.- 29, yytext- ar	: primary-expression --> identifier
+yyline no.- 29, yytext- ar	: postfix-expression --> primary-expression
+yyline no.- 29, yytext- mid1	: primary-expression --> identifier
+yyline no.- 29, yytext- mid1	: postfix-expression --> primary-expression
+yyline no.- 29, yytext- ]	: unary-expression --> postfix-expression
+yyline no.- 29, yytext- ]	: multiplicative-expression --> unary-expression
+yyline no.- 29, yytext- ]	: additive-expression --> multiplicative-expression
+yyline no.- 29, yytext- ]	: relational-expression --> additive-expression
+yyline no.- 29, yytext- ]	: equality-expression --> relational-expression
+yyline no.- 29, yytext- ]	: logical-AND-expression --> equality-expression
+yyline no.- 29, yytext- ]	: logical-OR-expression --> logical-AND-expression
+yyline no.- 29, yytext- ]	: conditional-expression --> logical-OR-expression
+yyline no.- 29, yytext- ]	: assignment-expression --> conditional-expression
+yyline no.- 29, yytext- ]	: expression --> assignment-expression
+yyline no.- 29, yytext- ]	: postfix-expression --> postfix-expression [ expression ]
+yyline no.- 29, yytext- )	: unary-expression --> postfix-expression
+yyline no.- 29, yytext- )	: multiplicative-expression --> unary-expression
+yyline no.- 29, yytext- )	: additive-expression --> multiplicative-expression
+yyline no.- 29, yytext- )	: relational-expression --> relational-expression < additive-expression
+yyline no.- 29, yytext- )	: equality-expression --> relational-expression
+yyline no.- 29, yytext- )	: logical-AND-expression --> equality-expression
+yyline no.- 29, yytext- )	: logical-OR-expression --> logical-AND-expression
+yyline no.- 29, yytext- )	: conditional-expression --> logical-OR-expression
+yyline no.- 29, yytext- )	: assignment-expression --> conditional-expression
+yyline no.- 29, yytext- )	: expression --> assignment-expression
+yyline no.- 32, yytext- ternarySearch	: primary-expression --> identifier
+yyline no.- 32, yytext- ternarySearch	: postfix-expression --> primary-expression
+yyline no.- 32, yytext- l	: primary-expression --> identifier
+yyline no.- 32, yytext- l	: postfix-expression --> primary-expression
+yyline no.- 32, yytext- ,	: unary-expression --> postfix-expression
+yyline no.- 32, yytext- ,	: multiplicative-expression --> unary-expression
+yyline no.- 32, yytext- ,	: additive-expression --> multiplicative-expression
+yyline no.- 32, yytext- ,	: relational-expression --> additive-expression
+yyline no.- 32, yytext- ,	: equality-expression --> relational-expression
+yyline no.- 32, yytext- ,	: logical-AND-expression --> equality-expression
+yyline no.- 32, yytext- ,	: logical-OR-expression --> logical-AND-expression
+yyline no.- 32, yytext- ,	: conditional-expression --> logical-OR-expression
+yyline no.- 32, yytext- ,	: assignment-expression --> conditional-expression
+yyline no.- 32, yytext- ,	: argument-expression-list --> assignment-expression
+yyline no.- 32, yytext- mid1	: primary-expression --> identifier
+yyline no.- 32, yytext- mid1	: postfix-expression --> primary-expression
+yyline no.- 32, yytext- -	: unary-expression --> postfix-expression
+yyline no.- 32, yytext- -	: multiplicative-expression --> unary-expression
+yyline no.- 32, yytext- -	: additive-expression --> multiplicative-expression
+yyline no.- 32, yytext- 1	: primary-expression --> integer_constant
+yyline no.- 32, yytext- 1	: postfix-expression --> primary-expression
+yyline no.- 32, yytext- ,	: unary-expression --> postfix-expression
+yyline no.- 32, yytext- ,	: multiplicative-expression --> unary-expression
+yyline no.- 32, yytext- ,	: additive-expression --> additive-expression - multiplicative-expression
+yyline no.- 32, yytext- ,	: relational-expression --> additive-expression
+yyline no.- 32, yytext- ,	: equality-expression --> relational-expression
+yyline no.- 32, yytext- ,	: logical-AND-expression --> equality-expression
+yyline no.- 32, yytext- ,	: logical-OR-expression --> logical-AND-expression
+yyline no.- 32, yytext- ,	: conditional-expression --> logical-OR-expression
+yyline no.- 32, yytext- ,	: assignment-expression --> conditional-expression
+yyline no.- 32, yytext- ,	: argument-expression-list --> argument-expression-list , assignment-expression
+yyline no.- 32, yytext- key	: primary-expression --> identifier
+yyline no.- 32, yytext- key	: postfix-expression --> primary-expression
+yyline no.- 32, yytext- )	: unary-expression --> postfix-expression
+yyline no.- 32, yytext- )	: multiplicative-expression --> unary-expression
+yyline no.- 32, yytext- )	: additive-expression --> multiplicative-expression
+yyline no.- 32, yytext- )	: relational-expression --> additive-expression
+yyline no.- 32, yytext- )	: equality-expression --> relational-expression
+yyline no.- 32, yytext- )	: logical-AND-expression --> equality-expression
+yyline no.- 32, yytext- )	: logical-OR-expression --> logical-AND-expression
+yyline no.- 32, yytext- )	: conditional-expression --> logical-OR-expression
+yyline no.- 32, yytext- )	: assignment-expression --> conditional-expression
+yyline no.- 32, yytext- )	: argument-expression-list --> argument-expression-list , assignment-expression
+yyline no.- 32, yytext- )	: argument-expression-list-opt --> argument-expression-list
+yyline no.- 32, yytext- )	: postfix-expression --> postfix-expression ( argument-expression-list-opt )
+yyline no.- 32, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 32, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 32, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 32, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 32, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 32, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 32, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 32, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 32, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 32, yytext- ;	: expression --> assignment-expression
+yyline no.- 32, yytext- ;	: expression-opt --> expression
+yyline no.- 32, yytext- ;	: jump-statement --> return expression-opt ;
+yyline no.- 32, yytext- ;	: statement --> jump-statement
+yyline no.- 32, yytext- ;	: block-item --> statement
+yyline no.- 32, yytext- ;	: block-item-list --> block-item
+yyline no.- 33, yytext- }	: block-item-list-opt --> block-item-list
+yyline no.- 33, yytext- }	: compound-statement --> { block-item-list-opt }
+yyline no.- 33, yytext- }	: statement --> compound-statement
+yyline no.- 34, yytext- key	: primary-expression --> identifier
+yyline no.- 34, yytext- key	: postfix-expression --> primary-expression
+yyline no.- 34, yytext- >	: unary-expression --> postfix-expression
+yyline no.- 34, yytext- >	: multiplicative-expression --> unary-expression
+yyline no.- 34, yytext- >	: additive-expression --> multiplicative-expression
+yyline no.- 34, yytext- >	: relational-expression --> additive-expression
+yyline no.- 34, yytext- ar	: primary-expression --> identifier
+yyline no.- 34, yytext- ar	: postfix-expression --> primary-expression
+yyline no.- 34, yytext- mid2	: primary-expression --> identifier
+yyline no.- 34, yytext- mid2	: postfix-expression --> primary-expression
+yyline no.- 34, yytext- ]	: unary-expression --> postfix-expression
+yyline no.- 34, yytext- ]	: multiplicative-expression --> unary-expression
+yyline no.- 34, yytext- ]	: additive-expression --> multiplicative-expression
+yyline no.- 34, yytext- ]	: relational-expression --> additive-expression
+yyline no.- 34, yytext- ]	: equality-expression --> relational-expression
+yyline no.- 34, yytext- ]	: logical-AND-expression --> equality-expression
+yyline no.- 34, yytext- ]	: logical-OR-expression --> logical-AND-expression
+yyline no.- 34, yytext- ]	: conditional-expression --> logical-OR-expression
+yyline no.- 34, yytext- ]	: assignment-expression --> conditional-expression
+yyline no.- 34, yytext- ]	: expression --> assignment-expression
+yyline no.- 34, yytext- ]	: postfix-expression --> postfix-expression [ expression ]
+yyline no.- 34, yytext- )	: unary-expression --> postfix-expression
+yyline no.- 34, yytext- )	: multiplicative-expression --> unary-expression
+yyline no.- 34, yytext- )	: additive-expression --> multiplicative-expression
+yyline no.- 34, yytext- )	: relational-expression --> relational-expression > additive-expression
+yyline no.- 34, yytext- )	: equality-expression --> relational-expression
+yyline no.- 34, yytext- )	: logical-AND-expression --> equality-expression
+yyline no.- 34, yytext- )	: logical-OR-expression --> logical-AND-expression
+yyline no.- 34, yytext- )	: conditional-expression --> logical-OR-expression
+yyline no.- 34, yytext- )	: assignment-expression --> conditional-expression
+yyline no.- 34, yytext- )	: expression --> assignment-expression
+yyline no.- 37, yytext- ternarySearch	: primary-expression --> identifier
+yyline no.- 37, yytext- ternarySearch	: postfix-expression --> primary-expression
+yyline no.- 37, yytext- mid2	: primary-expression --> identifier
+yyline no.- 37, yytext- mid2	: postfix-expression --> primary-expression
+yyline no.- 37, yytext- +	: unary-expression --> postfix-expression
+yyline no.- 37, yytext- +	: multiplicative-expression --> unary-expression
+yyline no.- 37, yytext- +	: additive-expression --> multiplicative-expression
+yyline no.- 37, yytext- 1	: primary-expression --> integer_constant
+yyline no.- 37, yytext- 1	: postfix-expression --> primary-expression
+yyline no.- 37, yytext- ,	: unary-expression --> postfix-expression
+yyline no.- 37, yytext- ,	: multiplicative-expression --> unary-expression
+yyline no.- 37, yytext- ,	: additive-expression --> additive-expression + multiplicative-expression
+yyline no.- 37, yytext- ,	: relational-expression --> additive-expression
+yyline no.- 37, yytext- ,	: equality-expression --> relational-expression
+yyline no.- 37, yytext- ,	: logical-AND-expression --> equality-expression
+yyline no.- 37, yytext- ,	: logical-OR-expression --> logical-AND-expression
+yyline no.- 37, yytext- ,	: conditional-expression --> logical-OR-expression
+yyline no.- 37, yytext- ,	: assignment-expression --> conditional-expression
+yyline no.- 37, yytext- ,	: argument-expression-list --> assignment-expression
+yyline no.- 37, yytext- r	: primary-expression --> identifier
+yyline no.- 37, yytext- r	: postfix-expression --> primary-expression
+yyline no.- 37, yytext- ,	: unary-expression --> postfix-expression
+yyline no.- 37, yytext- ,	: multiplicative-expression --> unary-expression
+yyline no.- 37, yytext- ,	: additive-expression --> multiplicative-expression
+yyline no.- 37, yytext- ,	: relational-expression --> additive-expression
+yyline no.- 37, yytext- ,	: equality-expression --> relational-expression
+yyline no.- 37, yytext- ,	: logical-AND-expression --> equality-expression
+yyline no.- 37, yytext- ,	: logical-OR-expression --> logical-AND-expression
+yyline no.- 37, yytext- ,	: conditional-expression --> logical-OR-expression
+yyline no.- 37, yytext- ,	: assignment-expression --> conditional-expression
+yyline no.- 37, yytext- ,	: argument-expression-list --> argument-expression-list , assignment-expression
+yyline no.- 37, yytext- key	: primary-expression --> identifier
+yyline no.- 37, yytext- key	: postfix-expression --> primary-expression
+yyline no.- 37, yytext- )	: unary-expression --> postfix-expression
+yyline no.- 37, yytext- )	: multiplicative-expression --> unary-expression
+yyline no.- 37, yytext- )	: additive-expression --> multiplicative-expression
+yyline no.- 37, yytext- )	: relational-expression --> additive-expression
+yyline no.- 37, yytext- )	: equality-expression --> relational-expression
+yyline no.- 37, yytext- )	: logical-AND-expression --> equality-expression
+yyline no.- 37, yytext- )	: logical-OR-expression --> logical-AND-expression
+yyline no.- 37, yytext- )	: conditional-expression --> logical-OR-expression
+yyline no.- 37, yytext- )	: assignment-expression --> conditional-expression
+yyline no.- 37, yytext- )	: argument-expression-list --> argument-expression-list , assignment-expression
+yyline no.- 37, yytext- )	: argument-expression-list-opt --> argument-expression-list
+yyline no.- 37, yytext- )	: postfix-expression --> postfix-expression ( argument-expression-list-opt )
+yyline no.- 37, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 37, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 37, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 37, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 37, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 37, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 37, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 37, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 37, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 37, yytext- ;	: expression --> assignment-expression
+yyline no.- 37, yytext- ;	: expression-opt --> expression
+yyline no.- 37, yytext- ;	: jump-statement --> return expression-opt ;
+yyline no.- 37, yytext- ;	: statement --> jump-statement
+yyline no.- 37, yytext- ;	: block-item --> statement
+yyline no.- 37, yytext- ;	: block-item-list --> block-item
+yyline no.- 38, yytext- }	: block-item-list-opt --> block-item-list
+yyline no.- 38, yytext- }	: compound-statement --> { block-item-list-opt }
+yyline no.- 38, yytext- }	: statement --> compound-statement
+yyline no.- 42, yytext- ternarySearch	: primary-expression --> identifier
+yyline no.- 42, yytext- ternarySearch	: postfix-expression --> primary-expression
+yyline no.- 42, yytext- mid1	: primary-expression --> identifier
+yyline no.- 42, yytext- mid1	: postfix-expression --> primary-expression
+yyline no.- 42, yytext- +	: unary-expression --> postfix-expression
+yyline no.- 42, yytext- +	: multiplicative-expression --> unary-expression
+yyline no.- 42, yytext- +	: additive-expression --> multiplicative-expression
+yyline no.- 42, yytext- 1	: primary-expression --> integer_constant
+yyline no.- 42, yytext- 1	: postfix-expression --> primary-expression
+yyline no.- 42, yytext- ,	: unary-expression --> postfix-expression
+yyline no.- 42, yytext- ,	: multiplicative-expression --> unary-expression
+yyline no.- 42, yytext- ,	: additive-expression --> additive-expression + multiplicative-expression
+yyline no.- 42, yytext- ,	: relational-expression --> additive-expression
+yyline no.- 42, yytext- ,	: equality-expression --> relational-expression
+yyline no.- 42, yytext- ,	: logical-AND-expression --> equality-expression
+yyline no.- 42, yytext- ,	: logical-OR-expression --> logical-AND-expression
+yyline no.- 42, yytext- ,	: conditional-expression --> logical-OR-expression
+yyline no.- 42, yytext- ,	: assignment-expression --> conditional-expression
+yyline no.- 42, yytext- ,	: argument-expression-list --> assignment-expression
+yyline no.- 42, yytext- mid2	: primary-expression --> identifier
+yyline no.- 42, yytext- mid2	: postfix-expression --> primary-expression
+yyline no.- 42, yytext- -	: unary-expression --> postfix-expression
+yyline no.- 42, yytext- -	: multiplicative-expression --> unary-expression
+yyline no.- 42, yytext- -	: additive-expression --> multiplicative-expression
+yyline no.- 42, yytext- 1	: primary-expression --> integer_constant
+yyline no.- 42, yytext- 1	: postfix-expression --> primary-expression
+yyline no.- 42, yytext- ,	: unary-expression --> postfix-expression
+yyline no.- 42, yytext- ,	: multiplicative-expression --> unary-expression
+yyline no.- 42, yytext- ,	: additive-expression --> additive-expression - multiplicative-expression
+yyline no.- 42, yytext- ,	: relational-expression --> additive-expression
+yyline no.- 42, yytext- ,	: equality-expression --> relational-expression
+yyline no.- 42, yytext- ,	: logical-AND-expression --> equality-expression
+yyline no.- 42, yytext- ,	: logical-OR-expression --> logical-AND-expression
+yyline no.- 42, yytext- ,	: conditional-expression --> logical-OR-expression
+yyline no.- 42, yytext- ,	: assignment-expression --> conditional-expression
+yyline no.- 42, yytext- ,	: argument-expression-list --> argument-expression-list , assignment-expression
+yyline no.- 42, yytext- key	: primary-expression --> identifier
+yyline no.- 42, yytext- key	: postfix-expression --> primary-expression
+yyline no.- 42, yytext- )	: unary-expression --> postfix-expression
+yyline no.- 42, yytext- )	: multiplicative-expression --> unary-expression
+yyline no.- 42, yytext- )	: additive-expression --> multiplicative-expression
+yyline no.- 42, yytext- )	: relational-expression --> additive-expression
+yyline no.- 42, yytext- )	: equality-expression --> relational-expression
+yyline no.- 42, yytext- )	: logical-AND-expression --> equality-expression
+yyline no.- 42, yytext- )	: logical-OR-expression --> logical-AND-expression
+yyline no.- 42, yytext- )	: conditional-expression --> logical-OR-expression
+yyline no.- 42, yytext- )	: assignment-expression --> conditional-expression
+yyline no.- 42, yytext- )	: argument-expression-list --> argument-expression-list , assignment-expression
+yyline no.- 42, yytext- )	: argument-expression-list-opt --> argument-expression-list
+yyline no.- 42, yytext- )	: postfix-expression --> postfix-expression ( argument-expression-list-opt )
+yyline no.- 42, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 42, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 42, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 42, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 42, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 42, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 42, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 42, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 42, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 42, yytext- ;	: expression --> assignment-expression
+yyline no.- 42, yytext- ;	: expression-opt --> expression
+yyline no.- 42, yytext- ;	: jump-statement --> return expression-opt ;
+yyline no.- 42, yytext- ;	: statement --> jump-statement
+yyline no.- 42, yytext- ;	: block-item --> statement
+yyline no.- 42, yytext- ;	: block-item-list --> block-item
+yyline no.- 43, yytext- }	: block-item-list-opt --> block-item-list
+yyline no.- 43, yytext- }	: compound-statement --> { block-item-list-opt }
+yyline no.- 43, yytext- }	: statement --> compound-statement
+yyline no.- 43, yytext- }	: selection-statement --> if ( expression ) statement else statement
+yyline no.- 43, yytext- }	: statement --> selection-statement
+yyline no.- 43, yytext- }	: selection-statement --> if ( expression ) statement else statement
+yyline no.- 43, yytext- }	: statement --> selection-statement
+yyline no.- 43, yytext- }	: block-item --> statement
+yyline no.- 43, yytext- }	: block-item-list --> block-item-list block-item
+yyline no.- 44, yytext- }	: block-item-list-opt --> block-item-list
+yyline no.- 44, yytext- }	: compound-statement --> { block-item-list-opt }
+yyline no.- 44, yytext- }	: statement --> compound-statement
+yyline no.- 47, yytext- return	: selection-statement --> if ( expression ) statement
+yyline no.- 47, yytext- return	: statement --> selection-statement
+yyline no.- 47, yytext- return	: block-item --> statement
+yyline no.- 47, yytext- return	: block-item-list --> block-item
+yyline no.- 47, yytext- -	: unary-operator --> -
+yyline no.- 47, yytext- 1	: primary-expression --> integer_constant
+yyline no.- 47, yytext- 1	: postfix-expression --> primary-expression
+yyline no.- 47, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 47, yytext- ;	: unary-operator --> unary-expression
+yyline no.- 47, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 47, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 47, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 47, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 47, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 47, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 47, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 47, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 47, yytext- ;	: expression --> assignment-expression
+yyline no.- 47, yytext- ;	: expression-opt --> expression
+yyline no.- 47, yytext- ;	: jump-statement --> return expression-opt ;
+yyline no.- 47, yytext- ;	: statement --> jump-statement
+yyline no.- 47, yytext- ;	: block-item --> statement
+yyline no.- 47, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 48, yytext- }	: block-item-list-opt --> block-item-list
+yyline no.- 48, yytext- }	: compound-statement --> { block-item-list-opt }
+yyline no.- 48, yytext- }	: function-definition --> declaration-specifiers declarator declaration-list-opt compound-statement
+yyline no.- 48, yytext- }	: external-declaration --> function-definition
+yyline no.- 48, yytext- }	: translation-unit --> translation-unit external-declaration
+yyline no.- 51, yytext- int	: type-specifier --> int
+yyline no.- 51, yytext- main	: pointer-opt --> epsilon
+yyline no.- 51, yytext- )	: parameter-list-opt --> epsilon
+yyline no.- 51, yytext- )	: direct-declarator --> identifier ( parameter-list-opt )
+yyline no.- 51, yytext- )	: declarator --> pointer-opt direct-declarator
+yyline no.- 52, yytext- {	: declaration-list-opt --> epsilon
+yyline no.- 53, yytext- char	: type-specifier --> char
+yyline no.- 53, yytext- ch	: pointer-opt --> epsilon
+yyline no.- 53, yytext- =	: direct-declarator --> identifier
+yyline no.- 53, yytext- =	: declarator --> pointer-opt direct-declarator
+yyline no.- 53, yytext- 't'	: primary_expression --> character_constant
+yyline no.- 53, yytext- 't'	: postfix-expression --> primary-expression
+yyline no.- 53, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 53, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 53, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 53, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 53, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 53, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 53, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 53, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 53, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 53, yytext- ;	: initializer --> assignment-expression
+yyline no.- 53, yytext- ;	: init-declarator --> declarator = initializer
+yyline no.- 53, yytext- ;	: declaration --> type-specifier init-declarator ;
+yyline no.- 53, yytext- ;	: block-item --> declaration
+yyline no.- 53, yytext- ;	: block-item-list --> block-item
+yyline no.- 54, yytext- int	: type-specifier --> int
+yyline no.- 54, yytext- l	: pointer-opt --> epsilon
+yyline no.- 54, yytext- ;	: direct-declarator --> identifier
+yyline no.- 54, yytext- ;	: declarator --> pointer-opt direct-declarator
+yyline no.- 54, yytext- ;	: init-declarator --> declarator
+yyline no.- 54, yytext- ;	: declaration --> type-specifier init-declarator ;
+yyline no.- 54, yytext- ;	: block-item --> declaration
+yyline no.- 54, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 55, yytext- int	: type-specifier --> int
+yyline no.- 55, yytext- r	: pointer-opt --> epsilon
+yyline no.- 55, yytext- ;	: direct-declarator --> identifier
+yyline no.- 55, yytext- ;	: declarator --> pointer-opt direct-declarator
+yyline no.- 55, yytext- ;	: init-declarator --> declarator
+yyline no.- 55, yytext- ;	: declaration --> type-specifier init-declarator ;
+yyline no.- 55, yytext- ;	: block-item --> declaration
+yyline no.- 55, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 56, yytext- int	: type-specifier --> int
+yyline no.- 56, yytext- p	: pointer-opt --> epsilon
+yyline no.- 56, yytext- ;	: direct-declarator --> identifier
+yyline no.- 56, yytext- ;	: declarator --> pointer-opt direct-declarator
+yyline no.- 56, yytext- ;	: init-declarator --> declarator
+yyline no.- 56, yytext- ;	: declaration --> type-specifier init-declarator ;
+yyline no.- 56, yytext- ;	: block-item --> declaration
+yyline no.- 56, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 57, yytext- int	: type-specifier --> int
+yyline no.- 57, yytext- key	: pointer-opt --> epsilon
+yyline no.- 57, yytext- ;	: direct-declarator --> identifier
+yyline no.- 57, yytext- ;	: declarator --> pointer-opt direct-declarator
+yyline no.- 57, yytext- ;	: init-declarator --> declarator
+yyline no.- 57, yytext- ;	: declaration --> type-specifier init-declarator ;
+yyline no.- 57, yytext- ;	: block-item --> declaration
+yyline no.- 57, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 59, yytext- ar	: primary-expression --> identifier
+yyline no.- 59, yytext- ar	: postfix-expression --> primary-expression
+yyline no.- 59, yytext- 0	: primary-expression --> integer_constant
+yyline no.- 59, yytext- 0	: postfix-expression --> primary-expression
+yyline no.- 59, yytext- ]	: unary-expression --> postfix-expression
+yyline no.- 59, yytext- ]	: multiplicative-expression --> unary-expression
+yyline no.- 59, yytext- ]	: additive-expression --> multiplicative-expression
+yyline no.- 59, yytext- ]	: relational-expression --> additive-expression
+yyline no.- 59, yytext- ]	: equality-expression --> relational-expression
+yyline no.- 59, yytext- ]	: logical-AND-expression --> equality-expression
+yyline no.- 59, yytext- ]	: logical-OR-expression --> logical-AND-expression
+yyline no.- 59, yytext- ]	: conditional-expression --> logical-OR-expression
+yyline no.- 59, yytext- ]	: assignment-expression --> conditional-expression
+yyline no.- 59, yytext- ]	: expression --> assignment-expression
+yyline no.- 59, yytext- ]	: postfix-expression --> postfix-expression [ expression ]
+yyline no.- 59, yytext- =	: unary-expression --> postfix-expression
+yyline no.- 59, yytext- -	: unary-operator --> -
+yyline no.- 59, yytext- 91	: primary-expression --> integer_constant
+yyline no.- 59, yytext- 91	: postfix-expression --> primary-expression
+yyline no.- 59, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 59, yytext- ;	: unary-operator --> unary-expression
+yyline no.- 59, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 59, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 59, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 59, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 59, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 59, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 59, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 59, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 59, yytext- ;	: assignment-expression --> unary-expression assignment-operator assignment-expression
+yyline no.- 59, yytext- ;	: expression --> assignment-expression
+yyline no.- 59, yytext- ;	: expression-opt --> expression
+yyline no.- 59, yytext- ;	: expression-statement --> expression-opt ;
+yyline no.- 59, yytext- ;	: statement --> expression-statement
+yyline no.- 59, yytext- ;	: block-item --> statement
+yyline no.- 59, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 60, yytext- ar	: primary-expression --> identifier
+yyline no.- 60, yytext- ar	: postfix-expression --> primary-expression
+yyline no.- 60, yytext- 1	: primary-expression --> integer_constant
+yyline no.- 60, yytext- 1	: postfix-expression --> primary-expression
+yyline no.- 60, yytext- ]	: unary-expression --> postfix-expression
+yyline no.- 60, yytext- ]	: multiplicative-expression --> unary-expression
+yyline no.- 60, yytext- ]	: additive-expression --> multiplicative-expression
+yyline no.- 60, yytext- ]	: relational-expression --> additive-expression
+yyline no.- 60, yytext- ]	: equality-expression --> relational-expression
+yyline no.- 60, yytext- ]	: logical-AND-expression --> equality-expression
+yyline no.- 60, yytext- ]	: logical-OR-expression --> logical-AND-expression
+yyline no.- 60, yytext- ]	: conditional-expression --> logical-OR-expression
+yyline no.- 60, yytext- ]	: assignment-expression --> conditional-expression
+yyline no.- 60, yytext- ]	: expression --> assignment-expression
+yyline no.- 60, yytext- ]	: postfix-expression --> postfix-expression [ expression ]
+yyline no.- 60, yytext- =	: unary-expression --> postfix-expression
+yyline no.- 60, yytext- -	: unary-operator --> -
+yyline no.- 60, yytext- 78	: primary-expression --> integer_constant
+yyline no.- 60, yytext- 78	: postfix-expression --> primary-expression
+yyline no.- 60, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 60, yytext- ;	: unary-operator --> unary-expression
+yyline no.- 60, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 60, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 60, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 60, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 60, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 60, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 60, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 60, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 60, yytext- ;	: assignment-expression --> unary-expression assignment-operator assignment-expression
+yyline no.- 60, yytext- ;	: expression --> assignment-expression
+yyline no.- 60, yytext- ;	: expression-opt --> expression
+yyline no.- 60, yytext- ;	: expression-statement --> expression-opt ;
+yyline no.- 60, yytext- ;	: statement --> expression-statement
+yyline no.- 60, yytext- ;	: block-item --> statement
+yyline no.- 60, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 61, yytext- ar	: primary-expression --> identifier
+yyline no.- 61, yytext- ar	: postfix-expression --> primary-expression
+yyline no.- 61, yytext- 2	: primary-expression --> integer_constant
+yyline no.- 61, yytext- 2	: postfix-expression --> primary-expression
+yyline no.- 61, yytext- ]	: unary-expression --> postfix-expression
+yyline no.- 61, yytext- ]	: multiplicative-expression --> unary-expression
+yyline no.- 61, yytext- ]	: additive-expression --> multiplicative-expression
+yyline no.- 61, yytext- ]	: relational-expression --> additive-expression
+yyline no.- 61, yytext- ]	: equality-expression --> relational-expression
+yyline no.- 61, yytext- ]	: logical-AND-expression --> equality-expression
+yyline no.- 61, yytext- ]	: logical-OR-expression --> logical-AND-expression
+yyline no.- 61, yytext- ]	: conditional-expression --> logical-OR-expression
+yyline no.- 61, yytext- ]	: assignment-expression --> conditional-expression
+yyline no.- 61, yytext- ]	: expression --> assignment-expression
+yyline no.- 61, yytext- ]	: postfix-expression --> postfix-expression [ expression ]
+yyline no.- 61, yytext- =	: unary-expression --> postfix-expression
+yyline no.- 61, yytext- -	: unary-operator --> -
+yyline no.- 61, yytext- 60	: primary-expression --> integer_constant
+yyline no.- 61, yytext- 60	: postfix-expression --> primary-expression
+yyline no.- 61, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 61, yytext- ;	: unary-operator --> unary-expression
+yyline no.- 61, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 61, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 61, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 61, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 61, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 61, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 61, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 61, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 61, yytext- ;	: assignment-expression --> unary-expression assignment-operator assignment-expression
+yyline no.- 61, yytext- ;	: expression --> assignment-expression
+yyline no.- 61, yytext- ;	: expression-opt --> expression
+yyline no.- 61, yytext- ;	: expression-statement --> expression-opt ;
+yyline no.- 61, yytext- ;	: statement --> expression-statement
+yyline no.- 61, yytext- ;	: block-item --> statement
+yyline no.- 61, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 62, yytext- ar	: primary-expression --> identifier
+yyline no.- 62, yytext- ar	: postfix-expression --> primary-expression
+yyline no.- 62, yytext- 3	: primary-expression --> integer_constant
+yyline no.- 62, yytext- 3	: postfix-expression --> primary-expression
+yyline no.- 62, yytext- ]	: unary-expression --> postfix-expression
+yyline no.- 62, yytext- ]	: multiplicative-expression --> unary-expression
+yyline no.- 62, yytext- ]	: additive-expression --> multiplicative-expression
+yyline no.- 62, yytext- ]	: relational-expression --> additive-expression
+yyline no.- 62, yytext- ]	: equality-expression --> relational-expression
+yyline no.- 62, yytext- ]	: logical-AND-expression --> equality-expression
+yyline no.- 62, yytext- ]	: logical-OR-expression --> logical-AND-expression
+yyline no.- 62, yytext- ]	: conditional-expression --> logical-OR-expression
+yyline no.- 62, yytext- ]	: assignment-expression --> conditional-expression
+yyline no.- 62, yytext- ]	: expression --> assignment-expression
+yyline no.- 62, yytext- ]	: postfix-expression --> postfix-expression [ expression ]
+yyline no.- 62, yytext- =	: unary-expression --> postfix-expression
+yyline no.- 62, yytext- 0	: primary-expression --> integer_constant
+yyline no.- 62, yytext- 0	: postfix-expression --> primary-expression
+yyline no.- 62, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 62, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 62, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 62, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 62, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 62, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 62, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 62, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 62, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 62, yytext- ;	: assignment-expression --> unary-expression assignment-operator assignment-expression
+yyline no.- 62, yytext- ;	: expression --> assignment-expression
+yyline no.- 62, yytext- ;	: expression-opt --> expression
+yyline no.- 62, yytext- ;	: expression-statement --> expression-opt ;
+yyline no.- 62, yytext- ;	: statement --> expression-statement
+yyline no.- 62, yytext- ;	: block-item --> statement
+yyline no.- 62, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 63, yytext- ar	: primary-expression --> identifier
+yyline no.- 63, yytext- ar	: postfix-expression --> primary-expression
+yyline no.- 63, yytext- 4	: primary-expression --> integer_constant
+yyline no.- 63, yytext- 4	: postfix-expression --> primary-expression
+yyline no.- 63, yytext- ]	: unary-expression --> postfix-expression
+yyline no.- 63, yytext- ]	: multiplicative-expression --> unary-expression
+yyline no.- 63, yytext- ]	: additive-expression --> multiplicative-expression
+yyline no.- 63, yytext- ]	: relational-expression --> additive-expression
+yyline no.- 63, yytext- ]	: equality-expression --> relational-expression
+yyline no.- 63, yytext- ]	: logical-AND-expression --> equality-expression
+yyline no.- 63, yytext- ]	: logical-OR-expression --> logical-AND-expression
+yyline no.- 63, yytext- ]	: conditional-expression --> logical-OR-expression
+yyline no.- 63, yytext- ]	: assignment-expression --> conditional-expression
+yyline no.- 63, yytext- ]	: expression --> assignment-expression
+yyline no.- 63, yytext- ]	: postfix-expression --> postfix-expression [ expression ]
+yyline no.- 63, yytext- =	: unary-expression --> postfix-expression
+yyline no.- 63, yytext- 1	: primary-expression --> integer_constant
+yyline no.- 63, yytext- 1	: postfix-expression --> primary-expression
+yyline no.- 63, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 63, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 63, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 63, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 63, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 63, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 63, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 63, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 63, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 63, yytext- ;	: assignment-expression --> unary-expression assignment-operator assignment-expression
+yyline no.- 63, yytext- ;	: expression --> assignment-expression
+yyline no.- 63, yytext- ;	: expression-opt --> expression
+yyline no.- 63, yytext- ;	: expression-statement --> expression-opt ;
+yyline no.- 63, yytext- ;	: statement --> expression-statement
+yyline no.- 63, yytext- ;	: block-item --> statement
+yyline no.- 63, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 64, yytext- ar	: primary-expression --> identifier
+yyline no.- 64, yytext- ar	: postfix-expression --> primary-expression
+yyline no.- 64, yytext- 5	: primary-expression --> integer_constant
+yyline no.- 64, yytext- 5	: postfix-expression --> primary-expression
+yyline no.- 64, yytext- ]	: unary-expression --> postfix-expression
+yyline no.- 64, yytext- ]	: multiplicative-expression --> unary-expression
+yyline no.- 64, yytext- ]	: additive-expression --> multiplicative-expression
+yyline no.- 64, yytext- ]	: relational-expression --> additive-expression
+yyline no.- 64, yytext- ]	: equality-expression --> relational-expression
+yyline no.- 64, yytext- ]	: logical-AND-expression --> equality-expression
+yyline no.- 64, yytext- ]	: logical-OR-expression --> logical-AND-expression
+yyline no.- 64, yytext- ]	: conditional-expression --> logical-OR-expression
+yyline no.- 64, yytext- ]	: assignment-expression --> conditional-expression
+yyline no.- 64, yytext- ]	: expression --> assignment-expression
+yyline no.- 64, yytext- ]	: postfix-expression --> postfix-expression [ expression ]
+yyline no.- 64, yytext- =	: unary-expression --> postfix-expression
+yyline no.- 64, yytext- 2	: primary-expression --> integer_constant
+yyline no.- 64, yytext- 2	: postfix-expression --> primary-expression
+yyline no.- 64, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 64, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 64, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 64, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 64, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 64, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 64, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 64, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 64, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 64, yytext- ;	: assignment-expression --> unary-expression assignment-operator assignment-expression
+yyline no.- 64, yytext- ;	: expression --> assignment-expression
+yyline no.- 64, yytext- ;	: expression-opt --> expression
+yyline no.- 64, yytext- ;	: expression-statement --> expression-opt ;
+yyline no.- 64, yytext- ;	: statement --> expression-statement
+yyline no.- 64, yytext- ;	: block-item --> statement
+yyline no.- 64, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 65, yytext- ar	: primary-expression --> identifier
+yyline no.- 65, yytext- ar	: postfix-expression --> primary-expression
+yyline no.- 65, yytext- 6	: primary-expression --> integer_constant
+yyline no.- 65, yytext- 6	: postfix-expression --> primary-expression
+yyline no.- 65, yytext- ]	: unary-expression --> postfix-expression
+yyline no.- 65, yytext- ]	: multiplicative-expression --> unary-expression
+yyline no.- 65, yytext- ]	: additive-expression --> multiplicative-expression
+yyline no.- 65, yytext- ]	: relational-expression --> additive-expression
+yyline no.- 65, yytext- ]	: equality-expression --> relational-expression
+yyline no.- 65, yytext- ]	: logical-AND-expression --> equality-expression
+yyline no.- 65, yytext- ]	: logical-OR-expression --> logical-AND-expression
+yyline no.- 65, yytext- ]	: conditional-expression --> logical-OR-expression
+yyline no.- 65, yytext- ]	: assignment-expression --> conditional-expression
+yyline no.- 65, yytext- ]	: expression --> assignment-expression
+yyline no.- 65, yytext- ]	: postfix-expression --> postfix-expression [ expression ]
+yyline no.- 65, yytext- =	: unary-expression --> postfix-expression
+yyline no.- 65, yytext- 23	: primary-expression --> integer_constant
+yyline no.- 65, yytext- 23	: postfix-expression --> primary-expression
+yyline no.- 65, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 65, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 65, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 65, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 65, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 65, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 65, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 65, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 65, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 65, yytext- ;	: assignment-expression --> unary-expression assignment-operator assignment-expression
+yyline no.- 65, yytext- ;	: expression --> assignment-expression
+yyline no.- 65, yytext- ;	: expression-opt --> expression
+yyline no.- 65, yytext- ;	: expression-statement --> expression-opt ;
+yyline no.- 65, yytext- ;	: statement --> expression-statement
+yyline no.- 65, yytext- ;	: block-item --> statement
+yyline no.- 65, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 66, yytext- ar	: primary-expression --> identifier
+yyline no.- 66, yytext- ar	: postfix-expression --> primary-expression
+yyline no.- 66, yytext- 7	: primary-expression --> integer_constant
+yyline no.- 66, yytext- 7	: postfix-expression --> primary-expression
+yyline no.- 66, yytext- ]	: unary-expression --> postfix-expression
+yyline no.- 66, yytext- ]	: multiplicative-expression --> unary-expression
+yyline no.- 66, yytext- ]	: additive-expression --> multiplicative-expression
+yyline no.- 66, yytext- ]	: relational-expression --> additive-expression
+yyline no.- 66, yytext- ]	: equality-expression --> relational-expression
+yyline no.- 66, yytext- ]	: logical-AND-expression --> equality-expression
+yyline no.- 66, yytext- ]	: logical-OR-expression --> logical-AND-expression
+yyline no.- 66, yytext- ]	: conditional-expression --> logical-OR-expression
+yyline no.- 66, yytext- ]	: assignment-expression --> conditional-expression
+yyline no.- 66, yytext- ]	: expression --> assignment-expression
+yyline no.- 66, yytext- ]	: postfix-expression --> postfix-expression [ expression ]
+yyline no.- 66, yytext- =	: unary-expression --> postfix-expression
+yyline no.- 66, yytext- 45	: primary-expression --> integer_constant
+yyline no.- 66, yytext- 45	: postfix-expression --> primary-expression
+yyline no.- 66, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 66, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 66, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 66, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 66, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 66, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 66, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 66, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 66, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 66, yytext- ;	: assignment-expression --> unary-expression assignment-operator assignment-expression
+yyline no.- 66, yytext- ;	: expression --> assignment-expression
+yyline no.- 66, yytext- ;	: expression-opt --> expression
+yyline no.- 66, yytext- ;	: expression-statement --> expression-opt ;
+yyline no.- 66, yytext- ;	: statement --> expression-statement
+yyline no.- 66, yytext- ;	: block-item --> statement
+yyline no.- 66, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 67, yytext- ar	: primary-expression --> identifier
+yyline no.- 67, yytext- ar	: postfix-expression --> primary-expression
+yyline no.- 67, yytext- 8	: primary-expression --> integer_constant
+yyline no.- 67, yytext- 8	: postfix-expression --> primary-expression
+yyline no.- 67, yytext- ]	: unary-expression --> postfix-expression
+yyline no.- 67, yytext- ]	: multiplicative-expression --> unary-expression
+yyline no.- 67, yytext- ]	: additive-expression --> multiplicative-expression
+yyline no.- 67, yytext- ]	: relational-expression --> additive-expression
+yyline no.- 67, yytext- ]	: equality-expression --> relational-expression
+yyline no.- 67, yytext- ]	: logical-AND-expression --> equality-expression
+yyline no.- 67, yytext- ]	: logical-OR-expression --> logical-AND-expression
+yyline no.- 67, yytext- ]	: conditional-expression --> logical-OR-expression
+yyline no.- 67, yytext- ]	: assignment-expression --> conditional-expression
+yyline no.- 67, yytext- ]	: expression --> assignment-expression
+yyline no.- 67, yytext- ]	: postfix-expression --> postfix-expression [ expression ]
+yyline no.- 67, yytext- =	: unary-expression --> postfix-expression
+yyline no.- 67, yytext- 67	: primary-expression --> integer_constant
+yyline no.- 67, yytext- 67	: postfix-expression --> primary-expression
+yyline no.- 67, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 67, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 67, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 67, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 67, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 67, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 67, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 67, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 67, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 67, yytext- ;	: assignment-expression --> unary-expression assignment-operator assignment-expression
+yyline no.- 67, yytext- ;	: expression --> assignment-expression
+yyline no.- 67, yytext- ;	: expression-opt --> expression
+yyline no.- 67, yytext- ;	: expression-statement --> expression-opt ;
+yyline no.- 67, yytext- ;	: statement --> expression-statement
+yyline no.- 67, yytext- ;	: block-item --> statement
+yyline no.- 67, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 68, yytext- ar	: primary-expression --> identifier
+yyline no.- 68, yytext- ar	: postfix-expression --> primary-expression
+yyline no.- 68, yytext- 9	: primary-expression --> integer_constant
+yyline no.- 68, yytext- 9	: postfix-expression --> primary-expression
+yyline no.- 68, yytext- ]	: unary-expression --> postfix-expression
+yyline no.- 68, yytext- ]	: multiplicative-expression --> unary-expression
+yyline no.- 68, yytext- ]	: additive-expression --> multiplicative-expression
+yyline no.- 68, yytext- ]	: relational-expression --> additive-expression
+yyline no.- 68, yytext- ]	: equality-expression --> relational-expression
+yyline no.- 68, yytext- ]	: logical-AND-expression --> equality-expression
+yyline no.- 68, yytext- ]	: logical-OR-expression --> logical-AND-expression
+yyline no.- 68, yytext- ]	: conditional-expression --> logical-OR-expression
+yyline no.- 68, yytext- ]	: assignment-expression --> conditional-expression
+yyline no.- 68, yytext- ]	: expression --> assignment-expression
+yyline no.- 68, yytext- ]	: postfix-expression --> postfix-expression [ expression ]
+yyline no.- 68, yytext- =	: unary-expression --> postfix-expression
+yyline no.- 68, yytext- 100	: primary-expression --> integer_constant
+yyline no.- 68, yytext- 100	: postfix-expression --> primary-expression
+yyline no.- 68, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 68, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 68, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 68, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 68, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 68, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 68, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 68, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 68, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 68, yytext- ;	: assignment-expression --> unary-expression assignment-operator assignment-expression
+yyline no.- 68, yytext- ;	: expression --> assignment-expression
+yyline no.- 68, yytext- ;	: expression-opt --> expression
+yyline no.- 68, yytext- ;	: expression-statement --> expression-opt ;
+yyline no.- 68, yytext- ;	: statement --> expression-statement
+yyline no.- 68, yytext- ;	: block-item --> statement
+yyline no.- 68, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 71, yytext- int	: type-specifier --> int
+yyline no.- 71, yytext- i	: pointer-opt --> epsilon
+yyline no.- 71, yytext- =	: direct-declarator --> identifier
+yyline no.- 71, yytext- =	: declarator --> pointer-opt direct-declarator
+yyline no.- 71, yytext- 0	: primary-expression --> integer_constant
+yyline no.- 71, yytext- 0	: postfix-expression --> primary-expression
+yyline no.- 71, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 71, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 71, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 71, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 71, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 71, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 71, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 71, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 71, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 71, yytext- ;	: initializer --> assignment-expression
+yyline no.- 71, yytext- ;	: init-declarator --> declarator = initializer
+yyline no.- 71, yytext- ;	: declaration --> type-specifier init-declarator ;
+yyline no.- 71, yytext- ;	: block-item --> declaration
+yyline no.- 71, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 72, yytext- i	: primary-expression --> identifier
+yyline no.- 72, yytext- i	: postfix-expression --> primary-expression
+yyline no.- 72, yytext- =	: unary-expression --> postfix-expression
+yyline no.- 72, yytext- 0	: primary-expression --> integer_constant
+yyline no.- 72, yytext- 0	: postfix-expression --> primary-expression
+yyline no.- 72, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 72, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 72, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 72, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 72, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 72, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 72, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 72, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 72, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 72, yytext- ;	: assignment-expression --> unary-expression assignment-operator assignment-expression
+yyline no.- 72, yytext- ;	: expression --> assignment-expression
+yyline no.- 72, yytext- ;	: expression-opt --> expression
+yyline no.- 72, yytext- i	: primary-expression --> identifier
+yyline no.- 72, yytext- i	: postfix-expression --> primary-expression
+yyline no.- 72, yytext- <	: unary-expression --> postfix-expression
+yyline no.- 72, yytext- <	: multiplicative-expression --> unary-expression
+yyline no.- 72, yytext- <	: additive-expression --> multiplicative-expression
+yyline no.- 72, yytext- <	: relational-expression --> additive-expression
+yyline no.- 72, yytext- 9	: primary-expression --> integer_constant
+yyline no.- 72, yytext- 9	: postfix-expression --> primary-expression
+yyline no.- 72, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 72, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 72, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 72, yytext- ;	: relational-expression --> relational-expression < additive-expression
+yyline no.- 72, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 72, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 72, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 72, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 72, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 72, yytext- ;	: expression --> assignment-expression
+yyline no.- 72, yytext- ;	: expression-opt --> expression
+yyline no.- 72, yytext- i	: primary-expression --> identifier
+yyline no.- 72, yytext- i	: postfix-expression --> primary-expression
+yyline no.- 72, yytext- =	: unary-expression --> postfix-expression
+yyline no.- 72, yytext- i	: primary-expression --> identifier
+yyline no.- 72, yytext- i	: postfix-expression --> primary-expression
+yyline no.- 72, yytext- +	: unary-expression --> postfix-expression
+yyline no.- 72, yytext- +	: multiplicative-expression --> unary-expression
+yyline no.- 72, yytext- +	: additive-expression --> multiplicative-expression
+yyline no.- 72, yytext- 1	: primary-expression --> integer_constant
+yyline no.- 72, yytext- 1	: postfix-expression --> primary-expression
+yyline no.- 72, yytext- )	: unary-expression --> postfix-expression
+yyline no.- 72, yytext- )	: multiplicative-expression --> unary-expression
+yyline no.- 72, yytext- )	: additive-expression --> additive-expression + multiplicative-expression
+yyline no.- 72, yytext- )	: relational-expression --> additive-expression
+yyline no.- 72, yytext- )	: equality-expression --> relational-expression
+yyline no.- 72, yytext- )	: logical-AND-expression --> equality-expression
+yyline no.- 72, yytext- )	: logical-OR-expression --> logical-AND-expression
+yyline no.- 72, yytext- )	: conditional-expression --> logical-OR-expression
+yyline no.- 72, yytext- )	: assignment-expression --> conditional-expression
+yyline no.- 72, yytext- )	: assignment-expression --> unary-expression assignment-operator assignment-expression
+yyline no.- 72, yytext- )	: expression --> assignment-expression
+yyline no.- 72, yytext- )	: expression-opt --> expression
+yyline no.- 74, yytext- ar	: primary-expression --> identifier
+yyline no.- 74, yytext- ar	: postfix-expression --> primary-expression
+yyline no.- 74, yytext- i	: primary-expression --> identifier
+yyline no.- 74, yytext- i	: postfix-expression --> primary-expression
+yyline no.- 74, yytext- ]	: unary-expression --> postfix-expression
+yyline no.- 74, yytext- ]	: multiplicative-expression --> unary-expression
+yyline no.- 74, yytext- ]	: additive-expression --> multiplicative-expression
+yyline no.- 74, yytext- ]	: relational-expression --> additive-expression
+yyline no.- 74, yytext- ]	: equality-expression --> relational-expression
+yyline no.- 74, yytext- ]	: logical-AND-expression --> equality-expression
+yyline no.- 74, yytext- ]	: logical-OR-expression --> logical-AND-expression
+yyline no.- 74, yytext- ]	: conditional-expression --> logical-OR-expression
+yyline no.- 74, yytext- ]	: assignment-expression --> conditional-expression
+yyline no.- 74, yytext- ]	: expression --> assignment-expression
+yyline no.- 74, yytext- ]	: postfix-expression --> postfix-expression [ expression ]
+yyline no.- 74, yytext- >	: unary-expression --> postfix-expression
+yyline no.- 74, yytext- >	: multiplicative-expression --> unary-expression
+yyline no.- 74, yytext- >	: additive-expression --> multiplicative-expression
+yyline no.- 74, yytext- >	: relational-expression --> additive-expression
+yyline no.- 74, yytext- ar	: primary-expression --> identifier
+yyline no.- 74, yytext- ar	: postfix-expression --> primary-expression
+yyline no.- 74, yytext- i	: primary-expression --> identifier
+yyline no.- 74, yytext- i	: postfix-expression --> primary-expression
+yyline no.- 74, yytext- +	: unary-expression --> postfix-expression
+yyline no.- 74, yytext- +	: multiplicative-expression --> unary-expression
+yyline no.- 74, yytext- +	: additive-expression --> multiplicative-expression
+yyline no.- 74, yytext- 1	: primary-expression --> integer_constant
+yyline no.- 74, yytext- 1	: postfix-expression --> primary-expression
+yyline no.- 74, yytext- ]	: unary-expression --> postfix-expression
+yyline no.- 74, yytext- ]	: multiplicative-expression --> unary-expression
+yyline no.- 74, yytext- ]	: additive-expression --> additive-expression + multiplicative-expression
+yyline no.- 74, yytext- ]	: relational-expression --> additive-expression
+yyline no.- 74, yytext- ]	: equality-expression --> relational-expression
+yyline no.- 74, yytext- ]	: logical-AND-expression --> equality-expression
+yyline no.- 74, yytext- ]	: logical-OR-expression --> logical-AND-expression
+yyline no.- 74, yytext- ]	: conditional-expression --> logical-OR-expression
+yyline no.- 74, yytext- ]	: assignment-expression --> conditional-expression
+yyline no.- 74, yytext- ]	: expression --> assignment-expression
+yyline no.- 74, yytext- ]	: postfix-expression --> postfix-expression [ expression ]
+yyline no.- 74, yytext- )	: unary-expression --> postfix-expression
+yyline no.- 74, yytext- )	: multiplicative-expression --> unary-expression
+yyline no.- 74, yytext- )	: additive-expression --> multiplicative-expression
+yyline no.- 74, yytext- )	: relational-expression --> relational-expression > additive-expression
+yyline no.- 74, yytext- )	: equality-expression --> relational-expression
+yyline no.- 74, yytext- )	: logical-AND-expression --> equality-expression
+yyline no.- 74, yytext- )	: logical-OR-expression --> logical-AND-expression
+yyline no.- 74, yytext- )	: conditional-expression --> logical-OR-expression
+yyline no.- 74, yytext- )	: assignment-expression --> conditional-expression
+yyline no.- 74, yytext- )	: expression --> assignment-expression
+yyline no.- 74, yytext- ch	: primary-expression --> identifier
+yyline no.- 74, yytext- ch	: postfix-expression --> primary-expression
+yyline no.- 74, yytext- =	: unary-expression --> postfix-expression
+yyline no.- 74, yytext- 'f'	: primary_expression --> character_constant
+yyline no.- 74, yytext- 'f'	: postfix-expression --> primary-expression
+yyline no.- 74, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 74, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 74, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 74, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 74, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 74, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 74, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 74, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 74, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 74, yytext- ;	: assignment-expression --> unary-expression assignment-operator assignment-expression
+yyline no.- 74, yytext- ;	: expression --> assignment-expression
+yyline no.- 74, yytext- ;	: expression-opt --> expression
+yyline no.- 74, yytext- ;	: expression-statement --> expression-opt ;
+yyline no.- 74, yytext- ;	: statement --> expression-statement
+yyline no.- 75, yytext- }	: selection-statement --> if ( expression ) statement
+yyline no.- 75, yytext- }	: statement --> selection-statement
+yyline no.- 75, yytext- }	: block-item --> statement
+yyline no.- 75, yytext- }	: block-item-list --> block-item
+yyline no.- 75, yytext- }	: block-item-list-opt --> block-item-list
+yyline no.- 75, yytext- }	: compound-statement --> { block-item-list-opt }
+yyline no.- 75, yytext- }	: statement --> compound-statement
+yyline no.- 75, yytext- }	: iteration-statement --> for ( expression-opt ; expression-opt ; expression-opt ) statement
+yyline no.- 75, yytext- }	: statement --> iteration-statement
+yyline no.- 75, yytext- }	: block-item --> statement
+yyline no.- 75, yytext- }	: block-item-list --> block-item-list block-item
+yyline no.- 78, yytext- l	: primary-expression --> identifier
+yyline no.- 78, yytext- l	: postfix-expression --> primary-expression
+yyline no.- 78, yytext- =	: unary-expression --> postfix-expression
+yyline no.- 78, yytext- 0	: primary-expression --> integer_constant
+yyline no.- 78, yytext- 0	: postfix-expression --> primary-expression
+yyline no.- 78, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 78, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 78, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 78, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 78, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 78, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 78, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 78, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 78, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 78, yytext- ;	: assignment-expression --> unary-expression assignment-operator assignment-expression
+yyline no.- 78, yytext- ;	: expression --> assignment-expression
+yyline no.- 78, yytext- ;	: expression-opt --> expression
+yyline no.- 78, yytext- ;	: expression-statement --> expression-opt ;
+yyline no.- 78, yytext- ;	: statement --> expression-statement
+yyline no.- 78, yytext- ;	: block-item --> statement
+yyline no.- 78, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 80, yytext- r	: primary-expression --> identifier
+yyline no.- 80, yytext- r	: postfix-expression --> primary-expression
+yyline no.- 80, yytext- =	: unary-expression --> postfix-expression
+yyline no.- 80, yytext- 9	: primary-expression --> integer_constant
+yyline no.- 80, yytext- 9	: postfix-expression --> primary-expression
+yyline no.- 80, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 80, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 80, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 80, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 80, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 80, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 80, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 80, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 80, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 80, yytext- ;	: assignment-expression --> unary-expression assignment-operator assignment-expression
+yyline no.- 80, yytext- ;	: expression --> assignment-expression
+yyline no.- 80, yytext- ;	: expression-opt --> expression
+yyline no.- 80, yytext- ;	: expression-statement --> expression-opt ;
+yyline no.- 80, yytext- ;	: statement --> expression-statement
+yyline no.- 80, yytext- ;	: block-item --> statement
+yyline no.- 80, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 83, yytext- ch	: primary-expression --> identifier
+yyline no.- 83, yytext- ch	: postfix-expression --> primary-expression
+yyline no.- 83, yytext- ==	: unary-expression --> postfix-expression
+yyline no.- 83, yytext- ==	: multiplicative-expression --> unary-expression
+yyline no.- 83, yytext- ==	: additive-expression --> multiplicative-expression
+yyline no.- 83, yytext- ==	: relational-expression --> additive-expression
+yyline no.- 83, yytext- ==	: equality-expression --> relational-expression
+yyline no.- 83, yytext- 'f'	: primary_expression --> character_constant
+yyline no.- 83, yytext- 'f'	: postfix-expression --> primary-expression
+yyline no.- 83, yytext- ||	: unary-expression --> postfix-expression
+yyline no.- 83, yytext- ||	: multiplicative-expression --> unary-expression
+yyline no.- 83, yytext- ||	: additive-expression --> multiplicative-expression
+yyline no.- 83, yytext- ||	: relational-expression --> additive-expression
+yyline no.- 83, yytext- ||	: equality-expression --> equality-expression == relational-expression
+yyline no.- 83, yytext- ||	: logical-AND-expression --> equality-expression
+yyline no.- 83, yytext- ||	: logical-OR-expression --> logical-AND-expression
+yyline no.- 83, yytext- r	: primary-expression --> identifier
+yyline no.- 83, yytext- r	: postfix-expression --> primary-expression
+yyline no.- 83, yytext- !=	: unary-expression --> postfix-expression
+yyline no.- 83, yytext- !=	: multiplicative-expression --> unary-expression
+yyline no.- 83, yytext- !=	: additive-expression --> multiplicative-expression
+yyline no.- 83, yytext- !=	: relational-expression --> additive-expression
+yyline no.- 83, yytext- !=	: equality-expression --> relational-expression
+yyline no.- 83, yytext- 9	: primary-expression --> integer_constant
+yyline no.- 83, yytext- 9	: postfix-expression --> primary-expression
+yyline no.- 83, yytext- )	: unary-expression --> postfix-expression
+yyline no.- 83, yytext- )	: multiplicative-expression --> unary-expression
+yyline no.- 83, yytext- )	: additive-expression --> multiplicative-expression
+yyline no.- 83, yytext- )	: relational-expression --> additive-expression
+yyline no.- 83, yytext- )	: equality-expression --> equality-expression != relational-expression
+yyline no.- 83, yytext- )	: logical-AND-expression --> equality-expression
+yyline no.- 83, yytext- )	: logical-OR-expression --> logical_or_expression || logical-AND-expression
+yyline no.- 83, yytext- )	: conditional-expression --> logical-OR-expression
+yyline no.- 83, yytext- )	: assignment-expression --> conditional-expression
+yyline no.- 83, yytext- )	: expression --> assignment-expression
+yyline no.- 83, yytext- 0	: primary-expression --> integer_constant
+yyline no.- 83, yytext- 0	: postfix-expression --> primary-expression
+yyline no.- 83, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 83, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 83, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 83, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 83, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 83, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 83, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 83, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 83, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 83, yytext- ;	: expression --> assignment-expression
+yyline no.- 83, yytext- ;	: expression-opt --> expression
+yyline no.- 83, yytext- ;	: jump-statement --> return expression-opt ;
+yyline no.- 83, yytext- ;	: statement --> jump-statement
+yyline no.- 86, yytext- readInt	: selection-statement --> if ( expression ) statement
+yyline no.- 86, yytext- readInt	: statement --> selection-statement
+yyline no.- 86, yytext- readInt	: block-item --> statement
+yyline no.- 86, yytext- readInt	: block-item-list --> block-item-list block-item
+yyline no.- 86, yytext- readInt	: primary-expression --> identifier
+yyline no.- 86, yytext- readInt	: postfix-expression --> primary-expression
+yyline no.- 86, yytext- &	: unary-operator --> &
+yyline no.- 86, yytext- key	: primary-expression --> identifier
+yyline no.- 86, yytext- key	: postfix-expression --> primary-expression
+yyline no.- 86, yytext- )	: unary-expression --> postfix-expression
+yyline no.- 86, yytext- )	: unary-operator --> unary-expression
+yyline no.- 86, yytext- )	: multiplicative-expression --> unary-expression
+yyline no.- 86, yytext- )	: additive-expression --> multiplicative-expression
+yyline no.- 86, yytext- )	: relational-expression --> additive-expression
+yyline no.- 86, yytext- )	: equality-expression --> relational-expression
+yyline no.- 86, yytext- )	: logical-AND-expression --> equality-expression
+yyline no.- 86, yytext- )	: logical-OR-expression --> logical-AND-expression
+yyline no.- 86, yytext- )	: conditional-expression --> logical-OR-expression
+yyline no.- 86, yytext- )	: assignment-expression --> conditional-expression
+yyline no.- 86, yytext- )	: argument-expression-list --> assignment-expression
+yyline no.- 86, yytext- )	: argument-expression-list-opt --> argument-expression-list
+yyline no.- 86, yytext- )	: postfix-expression --> postfix-expression ( argument-expression-list-opt )
+yyline no.- 86, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 86, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 86, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 86, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 86, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 86, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 86, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 86, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 86, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 86, yytext- ;	: expression --> assignment-expression
+yyline no.- 86, yytext- ;	: expression-opt --> expression
+yyline no.- 86, yytext- ;	: expression-statement --> expression-opt ;
+yyline no.- 86, yytext- ;	: statement --> expression-statement
+yyline no.- 86, yytext- ;	: block-item --> statement
+yyline no.- 86, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 89, yytext- p	: primary-expression --> identifier
+yyline no.- 89, yytext- p	: postfix-expression --> primary-expression
+yyline no.- 89, yytext- =	: unary-expression --> postfix-expression
+yyline no.- 89, yytext- ternarySearch	: primary-expression --> identifier
+yyline no.- 89, yytext- ternarySearch	: postfix-expression --> primary-expression
+yyline no.- 89, yytext- l	: primary-expression --> identifier
+yyline no.- 89, yytext- l	: postfix-expression --> primary-expression
+yyline no.- 89, yytext- ,	: unary-expression --> postfix-expression
+yyline no.- 89, yytext- ,	: multiplicative-expression --> unary-expression
+yyline no.- 89, yytext- ,	: additive-expression --> multiplicative-expression
+yyline no.- 89, yytext- ,	: relational-expression --> additive-expression
+yyline no.- 89, yytext- ,	: equality-expression --> relational-expression
+yyline no.- 89, yytext- ,	: logical-AND-expression --> equality-expression
+yyline no.- 89, yytext- ,	: logical-OR-expression --> logical-AND-expression
+yyline no.- 89, yytext- ,	: conditional-expression --> logical-OR-expression
+yyline no.- 89, yytext- ,	: assignment-expression --> conditional-expression
+yyline no.- 89, yytext- ,	: argument-expression-list --> assignment-expression
+yyline no.- 89, yytext- r	: primary-expression --> identifier
+yyline no.- 89, yytext- r	: postfix-expression --> primary-expression
+yyline no.- 89, yytext- ,	: unary-expression --> postfix-expression
+yyline no.- 89, yytext- ,	: multiplicative-expression --> unary-expression
+yyline no.- 89, yytext- ,	: additive-expression --> multiplicative-expression
+yyline no.- 89, yytext- ,	: relational-expression --> additive-expression
+yyline no.- 89, yytext- ,	: equality-expression --> relational-expression
+yyline no.- 89, yytext- ,	: logical-AND-expression --> equality-expression
+yyline no.- 89, yytext- ,	: logical-OR-expression --> logical-AND-expression
+yyline no.- 89, yytext- ,	: conditional-expression --> logical-OR-expression
+yyline no.- 89, yytext- ,	: assignment-expression --> conditional-expression
+yyline no.- 89, yytext- ,	: argument-expression-list --> argument-expression-list , assignment-expression
+yyline no.- 89, yytext- key	: primary-expression --> identifier
+yyline no.- 89, yytext- key	: postfix-expression --> primary-expression
+yyline no.- 89, yytext- )	: unary-expression --> postfix-expression
+yyline no.- 89, yytext- )	: multiplicative-expression --> unary-expression
+yyline no.- 89, yytext- )	: additive-expression --> multiplicative-expression
+yyline no.- 89, yytext- )	: relational-expression --> additive-expression
+yyline no.- 89, yytext- )	: equality-expression --> relational-expression
+yyline no.- 89, yytext- )	: logical-AND-expression --> equality-expression
+yyline no.- 89, yytext- )	: logical-OR-expression --> logical-AND-expression
+yyline no.- 89, yytext- )	: conditional-expression --> logical-OR-expression
+yyline no.- 89, yytext- )	: assignment-expression --> conditional-expression
+yyline no.- 89, yytext- )	: argument-expression-list --> argument-expression-list , assignment-expression
+yyline no.- 89, yytext- )	: argument-expression-list-opt --> argument-expression-list
+yyline no.- 89, yytext- )	: postfix-expression --> postfix-expression ( argument-expression-list-opt )
+yyline no.- 89, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 89, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 89, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 89, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 89, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 89, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 89, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 89, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 89, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 89, yytext- ;	: assignment-expression --> unary-expression assignment-operator assignment-expression
+yyline no.- 89, yytext- ;	: expression --> assignment-expression
+yyline no.- 89, yytext- ;	: expression-opt --> expression
+yyline no.- 89, yytext- ;	: expression-statement --> expression-opt ;
+yyline no.- 89, yytext- ;	: statement --> expression-statement
+yyline no.- 89, yytext- ;	: block-item --> statement
+yyline no.- 89, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 90, yytext- p	: primary-expression --> identifier
+yyline no.- 90, yytext- p	: postfix-expression --> primary-expression
+yyline no.- 90, yytext- ==	: unary-expression --> postfix-expression
+yyline no.- 90, yytext- ==	: multiplicative-expression --> unary-expression
+yyline no.- 90, yytext- ==	: additive-expression --> multiplicative-expression
+yyline no.- 90, yytext- ==	: relational-expression --> additive-expression
+yyline no.- 90, yytext- ==	: equality-expression --> relational-expression
+yyline no.- 90, yytext- -	: unary-operator --> -
+yyline no.- 90, yytext- 1	: primary-expression --> integer_constant
+yyline no.- 90, yytext- 1	: postfix-expression --> primary-expression
+yyline no.- 90, yytext- )	: unary-expression --> postfix-expression
+yyline no.- 90, yytext- )	: unary-operator --> unary-expression
+yyline no.- 90, yytext- )	: multiplicative-expression --> unary-expression
+yyline no.- 90, yytext- )	: additive-expression --> multiplicative-expression
+yyline no.- 90, yytext- )	: relational-expression --> additive-expression
+yyline no.- 90, yytext- )	: equality-expression --> equality-expression == relational-expression
+yyline no.- 90, yytext- )	: logical-AND-expression --> equality-expression
+yyline no.- 90, yytext- )	: logical-OR-expression --> logical-AND-expression
+yyline no.- 90, yytext- )	: conditional-expression --> logical-OR-expression
+yyline no.- 90, yytext- )	: assignment-expression --> conditional-expression
+yyline no.- 90, yytext- )	: expression --> assignment-expression
+yyline no.- 91, yytext- printStr	: primary-expression --> identifier
+yyline no.- 91, yytext- printStr	: postfix-expression --> primary-expression
+yyline no.- 91, yytext- "Element is not present in array"	: primary-expression --> string-literal
+yyline no.- 91, yytext- "Element is not present in array"	: postfix-expression --> primary-expression
+yyline no.- 91, yytext- )	: unary-expression --> postfix-expression
+yyline no.- 91, yytext- )	: multiplicative-expression --> unary-expression
+yyline no.- 91, yytext- )	: additive-expression --> multiplicative-expression
+yyline no.- 91, yytext- )	: relational-expression --> additive-expression
+yyline no.- 91, yytext- )	: equality-expression --> relational-expression
+yyline no.- 91, yytext- )	: logical-AND-expression --> equality-expression
+yyline no.- 91, yytext- )	: logical-OR-expression --> logical-AND-expression
+yyline no.- 91, yytext- )	: conditional-expression --> logical-OR-expression
+yyline no.- 91, yytext- )	: assignment-expression --> conditional-expression
+yyline no.- 91, yytext- )	: argument-expression-list --> assignment-expression
+yyline no.- 91, yytext- )	: argument-expression-list-opt --> argument-expression-list
+yyline no.- 91, yytext- )	: postfix-expression --> postfix-expression ( argument-expression-list-opt )
+yyline no.- 91, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 91, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 91, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 91, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 91, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 91, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 91, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 91, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 91, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 91, yytext- ;	: expression --> assignment-expression
+yyline no.- 91, yytext- ;	: expression-opt --> expression
+yyline no.- 91, yytext- ;	: expression-statement --> expression-opt ;
+yyline no.- 91, yytext- ;	: statement --> expression-statement
+yyline no.- 93, yytext- printStr	: primary-expression --> identifier
+yyline no.- 93, yytext- printStr	: postfix-expression --> primary-expression
+yyline no.- 93, yytext- "Element is present at index "	: primary-expression --> string-literal
+yyline no.- 93, yytext- "Element is present at index "	: postfix-expression --> primary-expression
+yyline no.- 93, yytext- )	: unary-expression --> postfix-expression
+yyline no.- 93, yytext- )	: multiplicative-expression --> unary-expression
+yyline no.- 93, yytext- )	: additive-expression --> multiplicative-expression
+yyline no.- 93, yytext- )	: relational-expression --> additive-expression
+yyline no.- 93, yytext- )	: equality-expression --> relational-expression
+yyline no.- 93, yytext- )	: logical-AND-expression --> equality-expression
+yyline no.- 93, yytext- )	: logical-OR-expression --> logical-AND-expression
+yyline no.- 93, yytext- )	: conditional-expression --> logical-OR-expression
+yyline no.- 93, yytext- )	: assignment-expression --> conditional-expression
+yyline no.- 93, yytext- )	: argument-expression-list --> assignment-expression
+yyline no.- 93, yytext- )	: argument-expression-list-opt --> argument-expression-list
+yyline no.- 93, yytext- )	: postfix-expression --> postfix-expression ( argument-expression-list-opt )
+yyline no.- 93, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 93, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 93, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 93, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 93, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 93, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 93, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 93, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 93, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 93, yytext- ;	: expression --> assignment-expression
+yyline no.- 93, yytext- ;	: expression-opt --> expression
+yyline no.- 93, yytext- ;	: expression-statement --> expression-opt ;
+yyline no.- 93, yytext- ;	: statement --> expression-statement
+yyline no.- 93, yytext- ;	: block-item --> statement
+yyline no.- 93, yytext- ;	: block-item-list --> block-item
+yyline no.- 94, yytext- printInt	: primary-expression --> identifier
+yyline no.- 94, yytext- printInt	: postfix-expression --> primary-expression
+yyline no.- 94, yytext- p	: primary-expression --> identifier
+yyline no.- 94, yytext- p	: postfix-expression --> primary-expression
+yyline no.- 94, yytext- )	: unary-expression --> postfix-expression
+yyline no.- 94, yytext- )	: multiplicative-expression --> unary-expression
+yyline no.- 94, yytext- )	: additive-expression --> multiplicative-expression
+yyline no.- 94, yytext- )	: relational-expression --> additive-expression
+yyline no.- 94, yytext- )	: equality-expression --> relational-expression
+yyline no.- 94, yytext- )	: logical-AND-expression --> equality-expression
+yyline no.- 94, yytext- )	: logical-OR-expression --> logical-AND-expression
+yyline no.- 94, yytext- )	: conditional-expression --> logical-OR-expression
+yyline no.- 94, yytext- )	: assignment-expression --> conditional-expression
+yyline no.- 94, yytext- )	: argument-expression-list --> assignment-expression
+yyline no.- 94, yytext- )	: argument-expression-list-opt --> argument-expression-list
+yyline no.- 94, yytext- )	: postfix-expression --> postfix-expression ( argument-expression-list-opt )
+yyline no.- 94, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 94, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 94, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 94, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 94, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 94, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 94, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 94, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 94, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 94, yytext- ;	: expression --> assignment-expression
+yyline no.- 94, yytext- ;	: expression-opt --> expression
+yyline no.- 94, yytext- ;	: expression-statement --> expression-opt ;
+yyline no.- 94, yytext- ;	: statement --> expression-statement
+yyline no.- 94, yytext- ;	: block-item --> statement
+yyline no.- 94, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 95, yytext- }	: block-item-list-opt --> block-item-list
+yyline no.- 95, yytext- }	: compound-statement --> { block-item-list-opt }
+yyline no.- 95, yytext- }	: statement --> compound-statement
+yyline no.- 95, yytext- }	: selection-statement --> if ( expression ) statement else statement
+yyline no.- 95, yytext- }	: statement --> selection-statement
+yyline no.- 95, yytext- }	: block-item --> statement
+yyline no.- 95, yytext- }	: block-item-list --> block-item-list block-item
+yyline no.- 96, yytext- 0	: primary-expression --> integer_constant
+yyline no.- 96, yytext- 0	: postfix-expression --> primary-expression
+yyline no.- 96, yytext- ;	: unary-expression --> postfix-expression
+yyline no.- 96, yytext- ;	: multiplicative-expression --> unary-expression
+yyline no.- 96, yytext- ;	: additive-expression --> multiplicative-expression
+yyline no.- 96, yytext- ;	: relational-expression --> additive-expression
+yyline no.- 96, yytext- ;	: equality-expression --> relational-expression
+yyline no.- 96, yytext- ;	: logical-AND-expression --> equality-expression
+yyline no.- 96, yytext- ;	: logical-OR-expression --> logical-AND-expression
+yyline no.- 96, yytext- ;	: conditional-expression --> logical-OR-expression
+yyline no.- 96, yytext- ;	: assignment-expression --> conditional-expression
+yyline no.- 96, yytext- ;	: expression --> assignment-expression
+yyline no.- 96, yytext- ;	: expression-opt --> expression
+yyline no.- 96, yytext- ;	: jump-statement --> return expression-opt ;
+yyline no.- 96, yytext- ;	: statement --> jump-statement
+yyline no.- 96, yytext- ;	: block-item --> statement
+yyline no.- 96, yytext- ;	: block-item-list --> block-item-list block-item
+yyline no.- 97, yytext- }	: block-item-list-opt --> block-item-list
+yyline no.- 97, yytext- }	: compound-statement --> { block-item-list-opt }
+yyline no.- 97, yytext- }	: function-definition --> declaration-specifiers declarator declaration-list-opt compound-statement
+yyline no.- 97, yytext- }	: external-declaration --> function-definition
+yyline no.- 97, yytext- }	: translation-unit --> translation-unit external-declaration
