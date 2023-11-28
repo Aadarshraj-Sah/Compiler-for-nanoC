@@ -52,7 +52,7 @@ opcode , assignment1, assignment2, result.
 Various Functions like emit, print etc.
 
 ### Target Code Generation:
-Target _translator.c file outputs the .asm file with the the help of Symbol Table and Quad Table.
+target _translator.c file outputs the .asm file with the the help of Symbol Table and Quad Table.
 
 
 
